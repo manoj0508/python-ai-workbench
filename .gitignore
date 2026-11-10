@@ -1,0 +1,4 @@
+.*
+!.gitignore
+__pycache__/
+ai-email-assistant/config/openAPI.txt
