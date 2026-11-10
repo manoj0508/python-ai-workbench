@@ -15,15 +15,15 @@ sender_name = st.text_input( "Enter your name (optional)" )
 
 if st.button( "Generate Email" ):
     if purpose:
-        output = generate_email(purpose, tone, recipient, sender_name, length)
-        st.session_state["current_email"] = output
+        email_response = generate_email(purpose, tone, recipient, sender_name, length)
+        st.session_state["current_email"] = email_response
         st.session_state["email_history"].append(
             {
                 "purpose": purpose,
                 "tone": tone,
                 "recipient": recipient,
                 "length": length,
-                "email": output,
+                "email": email_response,
             }
         )
     else:
