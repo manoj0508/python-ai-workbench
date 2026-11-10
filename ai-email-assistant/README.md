@@ -9,7 +9,8 @@ ai-email-assistant/
 ├── app.py                   # Streamlit interface and session-only email history
 ├── email_generator.py       # API key loading, prompt creation, and email generation
 ├── config/
-│   └── openAPI.txt          # OpenAI API key (keep private; do not commit)
+│   └── .gitkeep             # Keeps the config directory in Git
+│       openAPI.txt          # Create locally; contains your private OpenAI API key
 ├── requirements.txt         # Python dependencies
 └── README.md                # Project instructions
 ```
@@ -29,7 +30,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-Put your OpenAI API key in `config/openAPI.txt`. Keep the key private and do not commit or share it.
+Create `config/openAPI.txt` and put your OpenAI API key in it. This key file is ignored by Git; keep the key private and do not share it.
 
 Start the app:
 
