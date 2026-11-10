@@ -36,7 +36,7 @@ if st.session_state["current_email"]:
 if st.session_state["email_history"]:
     st.subheader("Email History")
     for index, item in enumerate(reversed(st.session_state["email_history"]), start=1):
-        with st.expander(f"Email {index}: {item['recipient']} · {item['purpose']} · {item['length']}"):
+        with st.expander(f"Email {index}: {item['recipient']} · {item['tone']} · {item['length']}"):
             st.write(f"**Purpose:** {item['purpose']}")
             st.write(item["email"])
 
