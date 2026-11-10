@@ -2,4 +2,4 @@
 !.gitignore
 !**/.gitkeep
 __pycache__/
-ai-email-assistant/config/openAPI.txt
+**/config/openAPI.txt

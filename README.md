@@ -10,6 +10,12 @@ A Streamlit application that uses the OpenAI API to draft emails. Choose the ema
 
 See the [AI Email Assistant README](./ai-email-assistant/README.md) for setup instructions, API key configuration, and details about its features.
 
+### [AI Text Summarizer](./ai-text-summarizer/)
+
+A Streamlit application that summarizes pasted text using LangChain and the OpenAI API. Choose a summary length and view the generated result in the app.
+
+See the [AI Text Summarizer README](./ai-text-summarizer/README.md) for setup instructions, API key configuration, and details about its features.
+
 ## Getting started
 
 1. Browse to a project's directory.
